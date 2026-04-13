@@ -4,37 +4,34 @@
 #include <math.h>
 
 /* ================= BEACON CONFIGURATION ================= */
-// Structure to hold individual beacon data and Kalman states
 struct Beacon {
   String ssid;
-  float x;          // Physical X coordinate in room (meters)
-  float y;          // Physical Y coordinate in room (meters)
-  
-  float x_est;      // Kalman state: estimated RSSI
-  float P;          // Kalman state: error covariance
-  float distance;   // Last computed distance
-  bool visible;     // Was it seen in the current scan?
+  float x;          
+  float y;          
+  float x_est;      
+  float P;          
+  float distance;   
+  bool visible;     
 };
 
-// Define your 3 servers here. 
-// YOU MUST UPDATE THE X AND Y VALUES based on your actual room layout.
 Beacon beacons[3] = {
-  {"Channel_1", 0.0, 0.0, -60.0, 1.0, 0.0, false},   // Server 1 at origin (0,0)
-  {"Channel_6", 5.0, 0.0, -60.0, 1.0, 0.0, false},   // Server 2 at 5m on X axis
-  {"Channel_11", 2.5, 5.0, -60.0, 1.0, 0.0, false}    // Server 3 at (2.5, 5)
+  {"Channel_1", 0.0, 0.0, -60.0, 1.0, 0.0, false},   
+  {"Channel_6", 5.0, 0.0, -60.0, 1.0, 0.0, false},   
+  {"Channel_11", 2.5, 5.0, -60.0, 1.0, 0.0, false}    
 };
+
+/* ================= GLOBAL STATE ================= */
+float posX = 0.0;
+float posY = 0.0;
 
 /* ================= USER SET UP INPUTS================= */
 const float RSSI_1M = -55.0;
 const float PATH_LOSS = 3.0;
 const int SCAN_DELAY = 500;
-
-/* ================= KALMAN CONSTANTS ================= */
-const float Q = 0.05; // process noise
-const float R = 8.0;  // measurement noise
+const float Q = 0.05; 
+const float R = 8.0;  
 
 /* ================= FILTER & DISTANCE ================= */
-// Pass the specific beacon reference into the filter
 float kalmanFilter(float z, Beacon &b) {
   b.P = b.P + Q;
   float K = b.P / (b.P + R);
@@ -47,8 +44,31 @@ float rssiToDistance(float rssi) {
   return pow(10.0, (RSSI_1M - rssi) / (10.0 * PATH_LOSS));
 }
 
+/* ================= TELEMETRY PROTOCOL ================= */
+void sendTelemetry() {
+  char payload[128];
+  
+  // Format the payload: DATA,esp_ms,d1,d6,d11,x,y
+  snprintf(payload, sizeof(payload), "DATA,%lu,%.2f,%.2f,%.2f,%.2f,%.2f", 
+           millis(), 
+           beacons[0].distance, 
+           beacons[1].distance, 
+           beacons[2].distance, 
+           posX, 
+           posY);
+
+  // Calculate XOR Checksum
+  uint8_t checksum = 0;
+  for (int i = 0; payload[i] != '\0'; i++) {
+    checksum ^= payload[i];
+  }
+
+  // Send packet with Sync ($) and Checksum (*XX)
+  Serial.printf("$%s*%02X\n", payload, checksum);
+}
+
 /* ================= TRILATERATION ================= */
-void calculatePosition() {
+bool calculatePosition() {
   float x1 = beacons[0].x; float y1 = beacons[0].y; float d1 = beacons[0].distance;
   float x2 = beacons[1].x; float y2 = beacons[1].y; float d2 = beacons[1].distance;
   float x3 = beacons[2].x; float y3 = beacons[2].y; float d3 = beacons[2].distance;
@@ -63,46 +83,32 @@ void calculatePosition() {
 
   float denominator = (A * E - B * D);
   
-  // Prevent division by zero if beacons are perfectly linear
   if (abs(denominator) < 0.0001) {
-    Serial.println("Math Error: Beacons are collinear (in a straight line). Move them to form a triangle.");
-    return;
+    Serial.println("Math Error: Beacons are collinear. Move them to form a triangle.");
+    return false;
   }
 
-  float posX = (C * E - F * B) / denominator;
-  float posY = (C * D - A * F) / (B * D - A * E);
-
-  Serial.print("=> POSITION: X: ");
-  Serial.print(posX, 2);
-  Serial.print(" m | Y: ");
-  Serial.print(posY, 2);
-  Serial.println(" m");
+  posX = (C * E - F * B) / denominator;
+  posY = (C * D - A * F) / (B * D - A * E);
+  return true;
 }
 
 /* ================= SETUP ================= */
 void setup() {
   Serial.begin(115200);
-  
-  // We don't connect. We disconnect to ensure the radio is free to scan.
   WiFi.mode(WIFI_STA);
   WiFi.disconnect(true);
   delay(100);
-  
   Serial.println("Scanner Ready. Waiting for beacons...");
 }
 
 /* ================= LOOP ================= */
 void loop() {
-  // Reset visibility for this loop iteration
   for (int i = 0; i < 3; i++) beacons[i].visible = false;
 
-  // Scan for Wi-Fi networks
   int n = WiFi.scanNetworks();
   
-  if (n == 0) {
-    Serial.println("No networks found.");
-  } else {
-    // Check all found networks against our beacon list
+  if (n > 0) {
     for (int i = 0; i < n; ++i) {
       String foundSSID = WiFi.SSID(i);
       int rawRSSI = WiFi.RSSI(i);
@@ -112,22 +118,20 @@ void loop() {
           float filtered = kalmanFilter(rawRSSI, beacons[b]);
           beacons[b].distance = rssiToDistance(filtered);
           beacons[b].visible = true;
-          
-          Serial.printf("%s: %.2fm | ", beacons[b].ssid.c_str(), beacons[b].distance);
         }
       }
     }
-    Serial.println(); // Newline after listing distances
   }
 
-  // Only calculate (X,Y) if all 3 beacons were seen in this scan
+  // Only calculate and send data if we have a full positional lock
   if (beacons[0].visible && beacons[1].visible && beacons[2].visible) {
-    calculatePosition();
+    if (calculatePosition()) {
+      sendTelemetry(); // Dispatches the $DATA payload with CRC
+    }
   } else {
     Serial.println("Waiting for all 3 beacons...");
   }
 
-  // Clear memory from the scan so it doesn't leak
   WiFi.scanDelete();
   delay(SCAN_DELAY);
 }
