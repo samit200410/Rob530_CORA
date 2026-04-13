@@ -1,9 +1,15 @@
-// Server_Wifi.cpp
-
 #include <WiFi.h>
 
-// This must match the TARGET_SSID and TARGET_PASSWORD in your client code
-const char* ssid = "Test3";
+/* === GRAB THE CHANNEL FROM PLATFORMIO.INI === */
+// If for some reason it wasn't defined, default to 1
+#ifndef WIFI_CHANNEL
+  #define WIFI_CHANNEL 1 
+#endif
+
+const int channel = WIFI_CHANNEL;      
+/* ============================================ */
+
+String dynamicSSID = "Channel_" + String(channel);
 const char* password = "CORA1234";
 
 void setup() {
@@ -11,22 +17,19 @@ void setup() {
   delay(1000);
   Serial.println("\n--- ESP32 Distance Target Booting ---");
 
-  // Set the device as an Access Point
-  // We use channel 1 to keep the signal consistent for testing
-  WiFi.softAP(ssid, password, 1, 0); 
+  WiFi.mode(WIFI_AP); 
+  WiFi.softAP(dynamicSSID.c_str(), password, channel, 0); 
 
   Serial.print("Access Point Started! SSID: ");
-  Serial.println(ssid);
-  Serial.print("IP Address: ");
-  Serial.println(WiFi.softAPIP());
+  Serial.println(dynamicSSID);
+  Serial.print("Channel: ");
+  Serial.println(channel);
 }
 
 void loop() {
-  // The server doesn't need to do anything in the loop for RSSI testing.
-  // Your client device just needs to see the signal it's broadcasting.
   static unsigned long lastUpdate = 0;
   if (millis() - lastUpdate > 5000) {
-    Serial.printf("Broadcasting... Connected stations: %d\n", WiFi.softAPgetStationNum());
+    Serial.printf("Broadcasting %s on Ch %d... Connected stations: %d\n", dynamicSSID.c_str(), channel, WiFi.softAPgetStationNum());
     lastUpdate = millis();
   }
 }

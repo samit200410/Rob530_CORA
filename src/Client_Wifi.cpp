@@ -19,9 +19,9 @@ struct Beacon {
 // Define your 3 servers here. 
 // YOU MUST UPDATE THE X AND Y VALUES based on your actual room layout.
 Beacon beacons[3] = {
-  {"Test1", 0.0, 0.0, -60.0, 1.0, 0.0, false},   // Server 1 at origin (0,0)
-  {"Test2", 5.0, 0.0, -60.0, 1.0, 0.0, false},   // Server 2 at 5m on X axis
-  {"Test3", 2.5, 5.0, -60.0, 1.0, 0.0, false}    // Server 3 at (2.5, 5)
+  {"Channel_1", 0.0, 0.0, -60.0, 1.0, 0.0, false},   // Server 1 at origin (0,0)
+  {"Channel_6", 5.0, 0.0, -60.0, 1.0, 0.0, false},   // Server 2 at 5m on X axis
+  {"Channel_11", 2.5, 5.0, -60.0, 1.0, 0.0, false}    // Server 3 at (2.5, 5)
 };
 
 /* ================= USER SET UP INPUTS================= */
