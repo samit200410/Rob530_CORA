@@ -15,9 +15,9 @@ struct Beacon {
 };
 
 Beacon beacons[3] = {
-  {"Channel_1", 0.0, 0.0, -60.0, 1.0, 0.0, false},   
-  {"Channel_6", 5.0, 0.0, -60.0, 1.0, 0.0, false},   
-  {"Channel_11", 2.5, 5.0, -60.0, 1.0, 0.0, false}    
+  {"Channel_1", 0.91, 0.2, -53.0, 1.0, 0.0, false},   
+  {"Channel_6", 0.6, -0.2, -55.0, 1.0, 0.0, false},   
+  {"Channel_11", 0.3, -0.2, -46.0, 1.0, 0.0, false}    
 };
 
 /* ================= GLOBAL STATE ================= */
@@ -25,11 +25,11 @@ float posX = 0.0;
 float posY = 0.0;
 
 /* ================= USER SET UP INPUTS================= */
-const float RSSI_1M = -55.0;
-const float PATH_LOSS = 3.0;
+const float RSSI_1M = -60.0;
+const float PATH_LOSS = 5.0;
 const int SCAN_DELAY = 500;
 const float Q = 0.05; 
-const float R = 8.0;  
+const float R = 5.0;  
 
 /* ================= FILTER & DISTANCE ================= */
 float kalmanFilter(float z, Beacon &b) {
@@ -109,9 +109,13 @@ void loop() {
   int n = WiFi.scanNetworks();
   
   if (n > 0) {
+    Serial.println("\n\n");
     for (int i = 0; i < n; ++i) {
       String foundSSID = WiFi.SSID(i);
       int rawRSSI = WiFi.RSSI(i);
+      if (rawRSSI >= -70) {
+        Serial.printf("RSSI for %s: %d\n", foundSSID.c_str(), rawRSSI);
+      }
 
       for (int b = 0; b < 3; b++) {
         if (foundSSID == beacons[b].ssid) {
@@ -126,6 +130,7 @@ void loop() {
   // Only calculate and send data if we have a full positional lock
   if (beacons[0].visible && beacons[1].visible && beacons[2].visible) {
     if (calculatePosition()) {
+      
       sendTelemetry(); // Dispatches the $DATA payload with CRC
     }
   } else {
