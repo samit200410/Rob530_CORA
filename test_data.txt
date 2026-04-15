@@ -1,286 +1,402 @@
 #1
 
-RSSI for Channel_11: -47
-RSSI for Channel_1: -53
-RSSI for Channel_6: -55
-$DATA,35701,0.74,0.79,0.54,-0.11,0.77*1F
+--- Current Beacon Status ---
+Channel_1  | Raw: -66.00 dBm | Filtered: -66.64 dBm | Dist:  7.32 m
+Channel_4  | Raw: -60.00 dBm | Filtered: -61.40 dBm | Dist:  3.75 m
+Channel_6  | Raw: -56.00 dBm | Filtered: -58.64 dBm | Dist:  2.64 m
+Channel_8  | Raw: -58.00 dBm | Filtered: -58.76 dBm | Dist:  2.68 m
+Channel_11 | Raw: -57.00 dBm | Filtered: -58.65 dBm | Dist:  2.64 m
+-----------------------------
 
+--- Current Beacon Status ---
+Channel_1  | Raw: -67.00 dBm | Filtered: -66.71 dBm | Dist:  7.39 m
+Channel_4  | Raw: -61.00 dBm | Filtered: -61.32 dBm | Dist:  3.71 m
+Channel_6  | Raw: -56.00 dBm | Filtered: -58.12 dBm | Dist:  2.47 m
+Channel_8  | Raw: -58.00 dBm | Filtered: -58.61 dBm | Dist:  2.63 m
+Channel_11 | Raw: -58.00 dBm | Filtered: -58.52 dBm | Dist:  2.60 m
+-----------------------------
 
-
-RSSI for Channel_11: -48
-RSSI for Channel_1: -54
-RSSI for Channel_6: -54
-RSSI for eduroam: -70
-RSSI for MGuest: -70
-RSSI for MSetup: -70
-$DATA,42426,0.74,0.79,0.54,-0.09,0.75*12
-
-
-
-RSSI for Channel_11: -48
-RSSI for Channel_1: -54
-RSSI for Channel_6: -56
-RSSI for eduroam: -70
-RSSI for MGuest: -70
-RSSI for MSetup: -70
-$DATA,49152,0.74,0.79,0.55,-0.10,0.76*15
+--- Current Beacon Status ---
+Channel_1  | Raw: -67.00 dBm | Filtered: -66.77 dBm | Dist:  7.45 m
+Channel_4  | Raw: -61.00 dBm | Filtered: -61.25 dBm | Dist:  3.68 m
+Channel_6  | Raw: -58.00 dBm | Filtered: -58.09 dBm | Dist:  2.46 m
+Channel_8  | Raw: -58.00 dBm | Filtered: -58.49 dBm | Dist:  2.59 m
+Channel_11 | Raw: -57.00 dBm | Filtered: -58.22 dBm | Dist:  2.50 m
 
 ----------------------------------------
 
 #2
 
-RSSI for Channel_1: -49
-RSSI for Channel_6: -50
-RSSI for Channel_11: -58
-RSSI for eduroam: -69
-RSSI for MSetup: -69
-RSSI for MGuest: -70
-$DATA,131455,0.66,0.72,0.77,0.58,0.23*00
+--- Current Beacon Status ---
+Channel_1  | Raw: -49.00 dBm | Filtered: -46.81 dBm | Dist:  0.58 m
+Channel_4  | Raw: -57.00 dBm | Filtered: -55.34 dBm | Dist:  1.73 m
+Channel_6  | Raw: -58.00 dBm | Filtered: -65.26 dBm | Dist:  6.14 m
+Channel_8  | Raw: -63.00 dBm | Filtered: -60.54 dBm | Dist:  3.36 m
+Channel_11 | Raw: -52.00 dBm | Filtered: -53.95 dBm | Dist:  1.45 m
+-----------------------------
 
+--- Current Beacon Status ---
+Channel_1  | Raw: -47.00 dBm | Filtered: -46.85 dBm | Dist:  0.58 m
+Channel_4  | Raw: -53.00 dBm | Filtered: -54.87 dBm | Dist:  1.63 m
+Channel_6  | Raw: -60.00 dBm | Filtered: -64.21 dBm | Dist:  5.37 m
+Channel_8  | Raw: -60.00 dBm | Filtered: -60.43 dBm | Dist:  3.32 m
+Channel_11 | Raw: -54.00 dBm | Filtered: -53.96 dBm | Dist:  1.45 m
+-----------------------------
 
-
-RSSI for Channel_1: -50
-RSSI for Channel_6: -51
-RSSI for Channel_11: -61
-RSSI for eduroam: -69
-RSSI for MGuest: -69
-RSSI for MSetup: -69
-$DATA,138380,0.66,0.71,0.79,0.66,0.17*01
-
-
-
-RSSI for Channel_1: -49
-RSSI for Channel_6: -51
-RSSI for Channel_11: -59
-RSSI for MGuest: -70
-RSSI for MSetup: -70
-RSSI for eduroam: -70
-$DATA,145306,0.65,0.71,0.81,0.71,0.13*03
+--- Current Beacon Status ---
+Channel_1  | Raw: -47.00 dBm | Filtered: -46.88 dBm | Dist:  0.59 m
+Channel_4  | Raw: -58.00 dBm | Filtered: -55.50 dBm | Dist:  1.77 m
+Channel_6  | Raw: -71.00 dBm | Filtered: -65.56 dBm | Dist:  6.39 m
+Channel_8  | Raw: -58.00 dBm | Filtered: -59.95 dBm | Dist:  3.12 m
+Channel_11 | Raw: -59.00 dBm | Filtered: -54.97 dBm | Dist:  1.65 m
 
 --------------------------------------------
 
 #3
 
-RSSI for Channel_11: -51
-RSSI for Channel_6: -58
-RSSI for Channel_1: -61
-$DATA,248691,0.88,0.76,0.72,0.33,0.09*03
+--- Current Beacon Status ---
+Channel_1  | Raw: -49.00 dBm | Filtered: -48.88 dBm | Dist:  0.76 m
+Channel_4  | Raw: -65.00 dBm | Filtered: -64.31 dBm | Dist:  5.44 m
+Channel_6  | Raw: -61.00 dBm | Filtered: -62.12 dBm | Dist:  4.11 m
+Channel_8  | Raw: -55.00 dBm | Filtered: -55.37 dBm | Dist:  1.74 m
+Channel_11 | Raw: -54.00 dBm | Filtered: -54.15 dBm | Dist:  1.49 m
+-----------------------------
 
+--- Current Beacon Status ---
+Channel_1  | Raw: -49.00 dBm | Filtered: -48.91 dBm | Dist:  0.76 m
+Channel_4  | Raw: -65.00 dBm | Filtered: -64.45 dBm | Dist:  5.54 m
+Channel_6  | Raw: -62.00 dBm | Filtered: -62.09 dBm | Dist:  4.10 m
+Channel_8  | Raw: -55.00 dBm | Filtered: -55.30 dBm | Dist:  1.72 m
+Channel_11 | Raw: -55.00 dBm | Filtered: -54.32 dBm | Dist:  1.52 m
+-----------------------------
 
-
-RSSI for Channel_11: -50
-RSSI for Channel_6: -58
-RSSI for Channel_1: -61
-$DATA,255406,0.90,0.78,0.71,0.28,0.12*07
-
-
-
-RSSI for Channel_11: -51
-RSSI for Channel_6: -59
-RSSI for Channel_1: -60
-$DATA,262121,0.91,0.79,0.70,0.23,0.17*0C
+--- Current Beacon Status ---
+Channel_1  | Raw: -49.00 dBm | Filtered: -48.92 dBm | Dist:  0.76 m
+Channel_4  | Raw: -65.00 dBm | Filtered: -64.56 dBm | Dist:  5.62 m
+Channel_6  | Raw: -62.00 dBm | Filtered: -62.08 dBm | Dist:  4.09 m
+Channel_8  | Raw: -54.00 dBm | Filtered: -55.04 dBm | Dist:  1.66 m
+Channel_11 | Raw: -54.00 dBm | Filtered: -54.25 dBm | Dist:  1.51 m
 
 --------------------------------------------
 
 #4
 
-RSSI for Channel_1: -44
-RSSI for Channel_11: -50
-RSSI for Channel_6: -53
-$DATA,481020,0.50,0.84,0.63,-0.06,1.19*2F
+--- Current Beacon Status ---
+Channel_1  | Raw: -55.00 dBm | Filtered: -53.76 dBm | Dist:  1.41 m
+Channel_4  | Raw: -64.00 dBm | Filtered: -64.79 dBm | Dist:  5.79 m
+Channel_6  | Raw: -64.00 dBm | Filtered: -63.47 dBm | Dist:  4.89 m
+Channel_8  | Raw: -53.00 dBm | Filtered: -52.78 dBm | Dist:  1.25 m
+Channel_11 | Raw: -54.00 dBm | Filtered: -55.51 dBm | Dist:  1.77 m
+-----------------------------
 
+--- Current Beacon Status ---
+Channel_1  | Raw: -55.00 dBm | Filtered: -54.01 dBm | Dist:  1.46 m
+Channel_4  | Raw: -64.00 dBm | Filtered: -64.64 dBm | Dist:  5.67 m
+Channel_6  | Raw: -64.00 dBm | Filtered: -63.57 dBm | Dist:  4.95 m
+Channel_8  | Raw: -54.00 dBm | Filtered: -53.03 dBm | Dist:  1.29 m
+Channel_11 | Raw: -56.00 dBm | Filtered: -55.61 dBm | Dist:  1.79 m
+-----------------------------
 
-
-RSSI for Channel_1: -41
-RSSI for Channel_11: -50
-RSSI for Channel_6: -56
-$DATA,487936,0.50,0.84,0.63,-0.06,1.20*2D
-
-
-
-RSSI for Channel_1: -44
-RSSI for Channel_11: -51
-RSSI for Channel_6: -53
-$DATA,494651,0.49,0.83,0.63,-0.02,1.15*2C
+--- Current Beacon Status ---
+Channel_1  | Raw: -56.00 dBm | Filtered: -54.41 dBm | Dist:  1.54 m
+Channel_4  | Raw: -62.00 dBm | Filtered: -64.11 dBm | Dist:  5.30 m
+Channel_6  | Raw: -65.00 dBm | Filtered: -63.86 dBm | Dist:  5.14 m
+Channel_8  | Raw: -53.00 dBm | Filtered: -53.02 dBm | Dist:  1.29 m
+Channel_11 | Raw: -55.00 dBm | Filtered: -55.49 dBm | Dist:  1.76 m
 
 --------------------------------------------
 
 #5
 
-RSSI for Channel_1: -44
-RSSI for Channel_11: -47
-RSSI for Channel_6: -65
-RSSI for eduroam: -69
-RSSI for MGuest: -70
-RSSI for MSetup: -70
-$DATA,618016,0.48,1.18,0.59,-1.29,3.04*2E
+--- Current Beacon Status ---
+Channel_1  | Raw: -53.00 dBm | Filtered: -53.51 dBm | Dist:  1.37 m
+Channel_4  | Raw: -55.00 dBm | Filtered: -54.73 dBm | Dist:  1.60 m
+Channel_6  | Raw: -60.00 dBm | Filtered: -59.89 dBm | Dist:  3.09 m
+Channel_8  | Raw: -59.00 dBm | Filtered: -59.99 dBm | Dist:  3.13 m
+Channel_11 | Raw: -47.00 dBm | Filtered: -47.02 dBm | Dist:  0.60 m
+-----------------------------
 
+--- Current Beacon Status ---
+Channel_1  | Raw: -54.00 dBm | Filtered: -53.61 dBm | Dist:  1.39 m
+Channel_4  | Raw: -54.00 dBm | Filtered: -54.58 dBm | Dist:  1.57 m
+Channel_6  | Raw: -60.00 dBm | Filtered: -59.91 dBm | Dist:  3.10 m
+Channel_8  | Raw: -60.00 dBm | Filtered: -59.99 dBm | Dist:  3.13 m
+Channel_11 | Raw: -47.00 dBm | Filtered: -47.02 dBm | Dist:  0.60 m
+-----------------------------
 
-
-RSSI for Channel_1: -44
-RSSI for Channel_11: -46
-RSSI for Channel_6: -65
-RSSI for eduroam: -69
-RSSI for MGuest: -69
-RSSI for MSetup: -69
-$DATA,624942,0.48,1.19,0.58,-1.33,3.09*2F
-
-
-
-RSSI for Channel_1: -44
-RSSI for Channel_11: -48
-RSSI for Channel_6: -61
-RSSI for eduroam: -70
-RSSI for MGuest: -70
-RSSI for MSetup: -70
-$DATA,631868,0.48,1.17,0.58,-1.28,3.01*2E
+--- Current Beacon Status ---
+Channel_1  | Raw: -53.00 dBm | Filtered: -53.49 dBm | Dist:  1.37 m
+Channel_4  | Raw: -53.00 dBm | Filtered: -54.27 dBm | Dist:  1.51 m
+Channel_6  | Raw: -59.00 dBm | Filtered: -59.73 dBm | Dist:  3.03 m
+Channel_8  | Raw: -58.00 dBm | Filtered: -59.60 dBm | Dist:  2.98 m
+Channel_11 | Raw: -47.00 dBm | Filtered: -47.01 dBm | Dist:  0.60 m
 
 --------------------------------------------
 
 #6
 
-RSSI for Channel_1: -48
-RSSI for Channel_11: -51
-RSSI for Channel_6: -53
-$DATA,754561,0.54,0.77,0.65,0.15,0.84*00
+--- Current Beacon Status ---
+Channel_1  | Raw: -54.00 dBm | Filtered: -53.29 dBm | Dist:  1.33 m
+Channel_4  | Raw: -56.00 dBm | Filtered: -55.22 dBm | Dist:  1.70 m
+Channel_6  | Raw: -65.00 dBm | Filtered: -64.37 dBm | Dist:  5.48 m
+Channel_8  | Raw: -60.00 dBm | Filtered: -60.98 dBm | Dist:  3.56 m
+Channel_11 | Raw: -50.00 dBm | Filtered: -50.09 dBm | Dist:  0.89 m
+-----------------------------
 
+--- Current Beacon Status ---
+Channel_1  | Raw: -52.00 dBm | Filtered: -53.03 dBm | Dist:  1.29 m
+Channel_4  | Raw: -55.00 dBm | Filtered: -55.17 dBm | Dist:  1.69 m
+Channel_6  | Raw: -68.00 dBm | Filtered: -65.10 dBm | Dist:  6.02 m
+Channel_8  | Raw: -63.00 dBm | Filtered: -61.39 dBm | Dist:  3.74 m
+Channel_11 | Raw: -50.00 dBm | Filtered: -50.08 dBm | Dist:  0.88 m
+-----------------------------
 
-
-RSSI for Channel_1: -47
-RSSI for Channel_11: -52
-RSSI for Channel_6: -56
-$DATA,761276,0.54,0.78,0.65,0.15,0.86*0A
-
-
-
-RSSI for Channel_1: -47
-RSSI for Channel_11: -52
-RSSI for Channel_6: -53
-$DATA,768191,0.54,0.77,0.65,0.17,0.83*01
+--- Current Beacon Status ---
+Channel_1  | Raw: -53.00 dBm | Filtered: -53.02 dBm | Dist:  1.29 m
+Channel_4  | Raw: -56.00 dBm | Filtered: -55.34 dBm | Dist:  1.73 m
+Channel_6  | Raw: -66.00 dBm | Filtered: -65.28 dBm | Dist:  6.16 m
+Channel_8  | Raw: -60.00 dBm | Filtered: -61.11 dBm | Dist:  3.61 m
+Channel_11 | Raw: -49.00 dBm | Filtered: -49.86 dBm | Dist:  0.86 m
 
 --------------------------------------------
 
 #7
 
-RSSI for Channel_1: -40
-RSSI for Channel_11: -50
-RSSI for Channel_6: -54
-$DATA,855890,0.44,0.74,0.64,0.21,0.87*0A
+--- Current Beacon Status ---
+Channel_1  | Raw: -49.00 dBm | Filtered: -49.55 dBm | Dist:  0.83 m
+Channel_4  | Raw: -51.00 dBm | Filtered: -51.49 dBm | Dist:  1.06 m
+Channel_6  | Raw: -53.00 dBm | Filtered: -53.93 dBm | Dist:  1.45 m
+Channel_8  | Raw: -63.00 dBm | Filtered: -62.77 dBm | Dist:  4.47 m
+Channel_11 | Raw: -57.00 dBm | Filtered: -57.25 dBm | Dist:  2.21 m
+-----------------------------
 
+--- Current Beacon Status ---
+Channel_1  | Raw: -50.00 dBm | Filtered: -49.64 dBm | Dist:  0.84 m
+Channel_4  | Raw: -51.00 dBm | Filtered: -51.39 dBm | Dist:  1.04 m
+Channel_6  | Raw: -55.00 dBm | Filtered: -54.15 dBm | Dist:  1.49 m
+Channel_8  | Raw: -65.00 dBm | Filtered: -63.22 dBm | Dist:  4.73 m
+Channel_11 | Raw: -56.00 dBm | Filtered: -57.00 dBm | Dist:  2.14 m
+-----------------------------
 
-
-RSSI for Channel_1: -40
-RSSI for Channel_11: -49
-RSSI for Channel_6: -54
-$DATA,862604,0.43,0.74,0.63,0.20,0.88*03
-
-
-
-RSSI for Channel_1: -40
-RSSI for Channel_11: -51
-RSSI for Channel_6: -54
-$DATA,869320,0.43,0.74,0.64,0.20,0.89*0D
+--- Current Beacon Status ---
+Channel_1  | Raw: -49.00 dBm | Filtered: -49.51 dBm | Dist:  0.82 m
+Channel_4  | Raw: -51.00 dBm | Filtered: -51.31 dBm | Dist:  1.03 m
+Channel_6  | Raw: -53.00 dBm | Filtered: -53.92 dBm | Dist:  1.44 m
+Channel_8  | Raw: -61.00 dBm | Filtered: -62.78 dBm | Dist:  4.47 m
+Channel_11 | Raw: -56.00 dBm | Filtered: -56.80 dBm | Dist:  2.08 m
 
 --------------------------------------------
 
 #8
 
-RSSI for Channel_1: -43
-RSSI for Channel_6: -51
-RSSI for Channel_11: -54
-$DATA,1017116,0.43,0.71,0.72,0.47,0.63*3D
+--- Current Beacon Status ---
+Channel_1  | Raw: -59.00 dBm | Filtered: -57.09 dBm | Dist:  2.16 m
+Channel_4  | Raw: -54.00 dBm | Filtered: -53.56 dBm | Dist:  1.38 m
+Channel_6  | Raw: -48.00 dBm | Filtered: -48.42 dBm | Dist:  0.71 m
+Channel_8  | Raw: -61.00 dBm | Filtered: -62.18 dBm | Dist:  4.15 m
+Channel_11 | Raw: -52.00 dBm | Filtered: -52.98 dBm | Dist:  1.28 m
+-----------------------------
 
+--- Current Beacon Status ---
+Channel_1  | Raw: -57.00 dBm | Filtered: -57.07 dBm | Dist:  2.16 m
+Channel_4  | Raw: -54.00 dBm | Filtered: -53.65 dBm | Dist:  1.39 m
+Channel_6  | Raw: -48.00 dBm | Filtered: -48.33 dBm | Dist:  0.71 m
+Channel_8  | Raw: -61.00 dBm | Filtered: -61.95 dBm | Dist:  4.02 m
+Channel_11 | Raw: -52.00 dBm | Filtered: -52.78 dBm | Dist:  1.25 m
+-----------------------------
 
-
-RSSI for Channel_1: -42
-RSSI for Channel_6: -52
-RSSI for Channel_11: -54
-RSSI for MSetup: -70
-$DATA,1023831,0.43,0.71,0.72,0.48,0.61*3B
-
-
-
-RSSI for Channel_1: -43
-RSSI for Channel_6: -52
-RSSI for Channel_11: -54
-RSSI for eduroam: -70
-RSSI for MSetup: -70
-$DATA,1030546,0.44,0.71,0.73,0.49,0.60*32
+--- Current Beacon Status ---
+Channel_1  | Raw: -56.00 dBm | Filtered: -56.86 dBm | Dist:  2.10 m
+Channel_4  | Raw: -53.00 dBm | Filtered: -53.52 dBm | Dist:  1.37 m
+Channel_6  | Raw: -48.00 dBm | Filtered: -48.27 dBm | Dist:  0.70 m
+Channel_8  | Raw: -63.00 dBm | Filtered: -62.16 dBm | Dist:  4.13 m
+Channel_11 | Raw: -52.00 dBm | Filtered: -52.62 dBm | Dist:  1.22 m
 
 --------------------------------------------
 
 #9
 
-RSSI for Channel_1: -41
-RSSI for Channel_11: -48
-RSSI for Channel_6: -54
-$DATA,1219603,0.39,0.78,0.60,0.04,1.12*35
+--- Current Beacon Status ---
+Channel_1  | Raw: -52.00 dBm | Filtered: -52.02 dBm | Dist:  1.13 m
+Channel_4  | Raw: -48.00 dBm | Filtered: -48.45 dBm | Dist:  0.72 m
+Channel_6  | Raw: -57.00 dBm | Filtered: -56.72 dBm | Dist:  2.06 m
+Channel_8  | Raw: -52.00 dBm | Filtered: -52.51 dBm | Dist:  1.20 m
+Channel_11 | Raw: -58.00 dBm | Filtered: -60.54 dBm | Dist:  3.36 m
+-----------------------------
 
+--- Current Beacon Status ---
+Channel_1  | Raw: -52.00 dBm | Filtered: -52.01 dBm | Dist:  1.13 m
+Channel_4  | Raw: -48.00 dBm | Filtered: -48.36 dBm | Dist:  0.71 m
+Channel_6  | Raw: -57.00 dBm | Filtered: -56.78 dBm | Dist:  2.08 m
+Channel_8  | Raw: -51.00 dBm | Filtered: -52.21 dBm | Dist:  1.16 m
+Channel_11 | Raw: -62.00 dBm | Filtered: -60.84 dBm | Dist:  3.49 m
+-----------------------------
 
-
-RSSI for Channel_1: -38
-RSSI for Channel_11: -47
-RSSI for Channel_6: -57
-$DATA,1226319,0.39,0.79,0.59,0.00,1.17*3D
-
-
-
-RSSI for Channel_1: -40
-RSSI for Channel_11: -46
-RSSI for Channel_6: -56
-$DATA,1233034,0.39,0.79,0.58,-0.02,1.19*15
+--- Current Beacon Status ---
+Channel_1  | Raw: -53.00 dBm | Filtered: -52.21 dBm | Dist:  1.16 m
+Channel_4  | Raw: -48.00 dBm | Filtered: -48.29 dBm | Dist:  0.70 m
+Channel_6  | Raw: -56.00 dBm | Filtered: -56.62 dBm | Dist:  2.04 m
+Channel_8  | Raw: -52.00 dBm | Filtered: -52.17 dBm | Dist:  1.15 m
+Channel_11 | Raw: -61.00 dBm | Filtered: -60.87 dBm | Dist:  3.51 m
 
 --------------------------------------------
 
 #10
 
-RSSI for Channel_1: -41
-RSSI for Channel_6: -48
-RSSI for Channel_11: -48
-$DATA,1396596,0.41,0.61,0.59,0.40,0.53*35
+--- Current Beacon Status ---
+Channel_1  | Raw: -52.00 dBm | Filtered: -52.55 dBm | Dist:  1.21 m
+Channel_4  | Raw: -52.00 dBm | Filtered: -52.12 dBm | Dist:  1.15 m
+Channel_6  | Raw: -62.00 dBm | Filtered: -62.11 dBm | Dist:  4.11 m
+Channel_8  | Raw: -54.00 dBm | Filtered: -53.39 dBm | Dist:  1.35 m
+Channel_11 | Raw: -58.00 dBm | Filtered: -57.22 dBm | Dist:  2.20 m
+-----------------------------
 
+--- Current Beacon Status ---
+Channel_1  | Raw: -52.00 dBm | Filtered: -52.44 dBm | Dist:  1.19 m
+Channel_4  | Raw: -51.00 dBm | Filtered: -51.90 dBm | Dist:  1.11 m
+Channel_6  | Raw: -62.00 dBm | Filtered: -62.09 dBm | Dist:  4.10 m
+Channel_8  | Raw: -53.00 dBm | Filtered: -53.31 dBm | Dist:  1.34 m
+Channel_11 | Raw: -58.00 dBm | Filtered: -57.37 dBm | Dist:  2.24 m
+-----------------------------
 
-
-RSSI for Channel_1: -41
-RSSI for Channel_6: -47
-RSSI for Channel_11: -49
-$DATA,1403511,0.41,0.60,0.59,0.42,0.51*30
-
-
-
-RSSI for Channel_1: -41
-RSSI for Channel_11: -49
-RSSI for Channel_6: -50
-$DATA,1410427,0.41,0.61,0.59,0.42,0.51*37
+--- Current Beacon Status ---
+Channel_1  | Raw: -52.00 dBm | Filtered: -52.35 dBm | Dist:  1.18 m
+Channel_4  | Raw: -52.00 dBm | Filtered: -51.92 dBm | Dist:  1.12 m
+Channel_6  | Raw: -63.00 dBm | Filtered: -62.27 dBm | Dist:  4.19 m
+Channel_8  | Raw: -53.00 dBm | Filtered: -53.25 dBm | Dist:  1.32 m
+Channel_11 | Raw: -58.00 dBm | Filtered: -57.50 dBm | Dist:  2.28 m
 
 --------------------------------------------
 
 #11
 
-RSSI for Channel_6: -45
-RSSI for Channel_1: -46
-RSSI for Channel_11: -53
-RSSI for eduroam: -70
-RSSI for MSetup: -70
-$DATA,1625928,0.51,0.50,0.72,0.90,-0.13*1F
+--- Current Beacon Status ---
+Channel_1  | Raw: -41.00 dBm | Filtered: -41.49 dBm | Dist:  0.29 m
+Channel_4  | Raw: -48.00 dBm | Filtered: -47.85 dBm | Dist:  0.66 m
+Channel_6  | Raw: -59.00 dBm | Filtered: -58.86 dBm | Dist:  2.71 m
+Channel_8  | Raw: -56.00 dBm | Filtered: -55.90 dBm | Dist:  1.86 m
+Channel_11 | Raw: -58.00 dBm | Filtered: -58.25 dBm | Dist:  2.51 m
+-----------------------------
 
+--- Current Beacon Status ---
+Channel_1  | Raw: -41.00 dBm | Filtered: -41.39 dBm | Dist:  0.29 m
+Channel_4  | Raw: -48.00 dBm | Filtered: -47.88 dBm | Dist:  0.67 m
+Channel_6  | Raw: -60.00 dBm | Filtered: -59.09 dBm | Dist:  2.79 m
+Channel_8  | Raw: -57.00 dBm | Filtered: -56.12 dBm | Dist:  1.91 m
+Channel_11 | Raw: -59.00 dBm | Filtered: -58.40 dBm | Dist:  2.56 m
+-----------------------------
 
+--- Current Beacon Status ---
+Channel_1  | Raw: -42.00 dBm | Filtered: -41.51 dBm | Dist:  0.30 m
+Channel_4  | Raw: -47.00 dBm | Filtered: -47.71 dBm | Dist:  0.65 m
+Channel_6  | Raw: -60.00 dBm | Filtered: -59.27 dBm | Dist:  2.86 m
+Channel_8  | Raw: -55.00 dBm | Filtered: -55.90 dBm | Dist:  1.86 m
+Channel_11 | Raw: -59.00 dBm | Filtered: -58.52 dBm | Dist:  2.60 m
 
-RSSI for Channel_6: -45
-RSSI for Channel_1: -46
-RSSI for Channel_11: -52
-RSSI for eduroam: -70
-RSSI for MGuest: -70
+--------------------------------------------
 
-RSSI for MSetup: -70
-$DATA,1632663,0.52,0.50,0.72,0.89,-0.13*12
+#12
 
+--- Current Beacon Status ---
+Channel_1  | Raw: -57.00 dBm | Filtered: -57.96 dBm | Dist:  2.42 m
+Channel_4  | Raw: -54.00 dBm | Filtered: -52.83 dBm | Dist:  1.25 m
+Channel_6  | Raw: -60.00 dBm | Filtered: -60.10 dBm | Dist:  3.18 m
+Channel_8  | Raw: -53.00 dBm | Filtered: -52.49 dBm | Dist:  1.20 m
+Channel_11 | Raw: -55.00 dBm | Filtered: -54.70 dBm | Dist:  1.59 m
+-----------------------------
 
+--- Current Beacon Status ---
+Channel_1  | Raw: -57.00 dBm | Filtered: -57.77 dBm | Dist:  2.36 m
+Channel_4  | Raw: -52.00 dBm | Filtered: -52.66 dBm | Dist:  1.23 m
+Channel_6  | Raw: -60.00 dBm | Filtered: -60.08 dBm | Dist:  3.17 m
+Channel_8  | Raw: -51.00 dBm | Filtered: -52.19 dBm | Dist:  1.16 m
+Channel_11 | Raw: -55.00 dBm | Filtered: -54.76 dBm | Dist:  1.61 m
+-----------------------------
 
-RSSI for Channel_1: -46
-RSSI for Channel_6: -46
-RSSI for Channel_11: -52
-RSSI for eduroam: -70
-RSSI for MGuest: -70
-RSSI for MSetup: -70
-$DATA,1639388,0.52,0.50,0.72,0.88,-0.12*19
+--- Current Beacon Status ---
+Channel_1  | Raw: -58.00 dBm | Filtered: -57.81 dBm | Dist:  2.37 m
+Channel_4  | Raw: -53.00 dBm | Filtered: -52.73 dBm | Dist:  1.24 m
+Channel_6  | Raw: -59.00 dBm | Filtered: -59.86 dBm | Dist:  3.08 m
+Channel_8  | Raw: -53.00 dBm | Filtered: -52.36 dBm | Dist:  1.18 m
+Channel_11 | Raw: -56.00 dBm | Filtered: -55.01 dBm | Dist:  1.66 m
+
+--------------------------------------------
+
+#13
+
+--- Current Beacon Status ---
+Channel_1  | Raw: -49.00 dBm | Filtered: -48.70 dBm | Dist:  0.74 m
+Channel_4  | Raw: -65.00 dBm | Filtered: -63.45 dBm | Dist:  4.87 m
+Channel_6  | Raw: -65.00 dBm | Filtered: -65.00 dBm | Dist:  5.94 m
+Channel_8  | Raw: -61.00 dBm | Filtered: -60.94 dBm | Dist:  3.54 m
+Channel_11 | Raw: -57.00 dBm | Filtered: -59.27 dBm | Dist:  2.86 m
+-----------------------------
+
+--- Current Beacon Status ---
+Channel_1  | Raw: -49.00 dBm | Filtered: -48.76 dBm | Dist:  0.75 m
+Channel_4  | Raw: -66.00 dBm | Filtered: -63.96 dBm | Dist:  5.20 m
+Channel_6  | Raw: -64.00 dBm | Filtered: -64.80 dBm | Dist:  5.79 m
+Channel_8  | Raw: -59.00 dBm | Filtered: -60.55 dBm | Dist:  3.37 m
+Channel_11 | Raw: -61.00 dBm | Filtered: -59.62 dBm | Dist:  2.99 m
+-----------------------------
+
+--- Current Beacon Status ---
+Channel_1  | Raw: -48.00 dBm | Filtered: -48.61 dBm | Dist:  0.73 m
+Channel_4  | Raw: -61.00 dBm | Filtered: -63.37 dBm | Dist:  4.82 m
+Channel_6  | Raw: -63.00 dBm | Filtered: -64.44 dBm | Dist:  5.53 m
+Channel_8  | Raw: -60.00 dBm | Filtered: -60.44 dBm | Dist:  3.32 m
+Channel_11 | Raw: -61.00 dBm | Filtered: -59.90 dBm | Dist:  3.10 m
+
+--------------------------------------------
+
+#14
+
+--- Current Beacon Status ---
+Channel_1  | Raw: -52.00 dBm | Filtered: -51.45 dBm | Dist:  1.05 m
+Channel_4  | Raw: -62.00 dBm | Filtered: -63.32 dBm | Dist:  4.80 m
+Channel_6  | Raw: -63.00 dBm | Filtered: -63.58 dBm | Dist:  4.95 m
+Channel_8  | Raw: -57.00 dBm | Filtered: -56.53 dBm | Dist:  2.01 m
+Channel_11 | Raw: -48.00 dBm | Filtered: -48.97 dBm | Dist:  0.77 m
+-----------------------------
+
+--- Current Beacon Status ---
+Channel_1  | Raw: -52.00 dBm | Filtered: -51.56 dBm | Dist:  1.07 m
+Channel_4  | Raw: -62.00 dBm | Filtered: -63.06 dBm | Dist:  4.64 m
+Channel_6  | Raw: -63.00 dBm | Filtered: -63.46 dBm | Dist:  4.88 m
+Channel_8  | Raw: -56.00 dBm | Filtered: -56.43 dBm | Dist:  1.99 m
+Channel_11 | Raw: -48.00 dBm | Filtered: -48.77 dBm | Dist:  0.75 m
+-----------------------------
+
+--- Current Beacon Status ---
+Channel_1  | Raw: -52.00 dBm | Filtered: -51.65 dBm | Dist:  1.08 m
+Channel_4  | Raw: -63.00 dBm | Filtered: -63.05 dBm | Dist:  4.63 m
+Channel_6  | Raw: -65.00 dBm | Filtered: -63.77 dBm | Dist:  5.08 m
+Channel_8  | Raw: -56.00 dBm | Filtered: -56.34 dBm | Dist:  1.97 m
+Channel_11 | Raw: -49.00 dBm | Filtered: -48.82 dBm | Dist:  0.75 m
+
+--------------------------------------------
+
+#15
+
+--- Current Beacon Status ---
+Channel_1  | Raw: -51.00 dBm | Filtered: -50.48 dBm | Dist:  0.93 m
+Channel_4  | Raw: -64.00 dBm | Filtered: -64.88 dBm | Dist:  5.85 m
+Channel_6  | Raw: -59.00 dBm | Filtered: -58.84 dBm | Dist:  2.70 m
+Channel_8  | Raw: -56.00 dBm | Filtered: -56.87 dBm | Dist:  2.10 m
+Channel_11 | Raw: -52.00 dBm | Filtered: -52.56 dBm | Dist:  1.21 m
+-----------------------------
+
+--- Current Beacon Status ---
+Channel_1  | Raw: -50.00 dBm | Filtered: -50.38 dBm | Dist:  0.92 m
+Channel_4  | Raw: -64.00 dBm | Filtered: -64.70 dBm | Dist:  5.72 m
+Channel_6  | Raw: -58.00 dBm | Filtered: -58.67 dBm | Dist:  2.65 m
+Channel_8  | Raw: -57.00 dBm | Filtered: -56.90 dBm | Dist:  2.11 m
+Channel_11 | Raw: -52.00 dBm | Filtered: -52.44 dBm | Dist:  1.20 m
+-----------------------------
+
+--- Current Beacon Status ---
+Channel_1  | Raw: -51.00 dBm | Filtered: -50.51 dBm | Dist:  0.93 m
+Channel_4  | Raw: -64.00 dBm | Filtered: -64.56 dBm | Dist:  5.62 m
+Channel_6  | Raw: -59.00 dBm | Filtered: -58.74 dBm | Dist:  2.67 m
+Channel_8  | Raw: -57.00 dBm | Filtered: -56.92 dBm | Dist:  2.12 m
+Channel_11 | Raw: -52.00 dBm | Filtered: -52.36 dBm | Dist:  1.18 m

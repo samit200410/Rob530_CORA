@@ -6,32 +6,35 @@
 /* ================= BEACON CONFIGURATION ================= */
 struct Beacon {
   String ssid;
-  float x;          
-  float y;          
+  float raw_rssi;   // Added: Stores the actual raw reading
   float x_est;      
   float P;          
   float distance;   
   bool visible;     
 };
 
-Beacon beacons[3] = {
-  {"Channel_1", 0.91, 0.2, -53.0, 1.0, 0.0, false},   
-  {"Channel_6", 0.6, -0.2, -55.0, 1.0, 0.0, false},   
-  {"Channel_11", 0.3, -0.2, -46.0, 1.0, 0.0, false}    
+// 5 servers using staggered channels
+Beacon beacons[5] = {
+  {"Channel_1", 0.0, -60.0, 1.0, 0.0, false},   
+  {"Channel_4", 0.0, -60.0, 1.0, 0.0, false},   
+  {"Channel_6", 0.0, -60.0, 1.0, 0.0, false},   
+  {"Channel_8", 0.0, -60.0, 1.0, 0.0, false},
+  {"Channel_11", 0.0, -60.0, 1.0, 0.0, false}
 };
 
-/* ================= GLOBAL STATE ================= */
-float posX = 0.0;
-float posY = 0.0;
-
-/* ================= USER SET UP INPUTS================= */
-const float RSSI_1M = -60.0;
-const float PATH_LOSS = 5.0;
+/* ================= SYSTEM PARAMETERS ================= */
 const int SCAN_DELAY = 500;
-const float Q = 0.05; 
-const float R = 5.0;  
 
-/* ================= FILTER & DISTANCE ================= */
+// KALMAN TUNING: Adjusted to trust raw measurements more
+const float Q = 0.1;  // Increased: Filter expects the environment to change faster
+const float R = 2.0;  // Decreased: Filter trusts the raw scan values more
+
+// These will be calculated dynamically in setup()
+float CALIBRATED_A = -55.0; 
+float CALIBRATED_N = 3.0;   
+const float CALIBRATION_DIST_2 = 3.0; // Stage 2 distance in meters
+
+/* ================= KALMAN FILTER ================= */
 float kalmanFilter(float z, Beacon &b) {
   b.P = b.P + Q;
   float K = b.P / (b.P + R);
@@ -40,57 +43,77 @@ float kalmanFilter(float z, Beacon &b) {
   return b.x_est;
 }
 
+/* ================= DISTANCE CALCULATION ================= */
 float rssiToDistance(float rssi) {
-  return pow(10.0, (RSSI_1M - rssi) / (10.0 * PATH_LOSS));
+  return pow(10.0, (CALIBRATED_A - rssi) / (10.0 * CALIBRATED_N));
 }
 
-/* ================= TELEMETRY PROTOCOL ================= */
-void sendTelemetry() {
-  char payload[128];
+/* ================= CALIBRATION ROUTINE ================= */
+float sampleCalibrationRSSI(String targetSSID, int samples) {
+  float sumRSSI = 0;
+  int validSamples = 0;
   
-  // Format the payload: DATA,esp_ms,d1,d6,d11,x,y
-  snprintf(payload, sizeof(payload), "DATA,%lu,%.2f,%.2f,%.2f,%.2f,%.2f", 
-           millis(), 
-           beacons[0].distance, 
-           beacons[1].distance, 
-           beacons[2].distance, 
-           posX, 
-           posY);
-
-  // Calculate XOR Checksum
-  uint8_t checksum = 0;
-  for (int i = 0; payload[i] != '\0'; i++) {
-    checksum ^= payload[i];
+  Serial.printf("Sampling %s...\n", targetSSID.c_str());
+  
+  while (validSamples < samples) {
+    int n = WiFi.scanNetworks();
+    for (int i = 0; i < n; ++i) {
+      if (WiFi.SSID(i) == targetSSID) {
+        sumRSSI += WiFi.RSSI(i);
+        validSamples++;
+        Serial.print(".");
+      }
+    }
+    WiFi.scanDelete();
+    delay(200); 
   }
-
-  // Send packet with Sync ($) and Checksum (*XX)
-  Serial.printf("$%s*%02X\n", payload, checksum);
+  Serial.println();
+  return sumRSSI / validSamples;
 }
 
-/* ================= TRILATERATION ================= */
-bool calculatePosition() {
-  float x1 = beacons[0].x; float y1 = beacons[0].y; float d1 = beacons[0].distance;
-  float x2 = beacons[1].x; float y2 = beacons[1].y; float d2 = beacons[1].distance;
-  float x3 = beacons[2].x; float y3 = beacons[2].y; float d3 = beacons[2].distance;
-
-  float A = 2 * x2 - 2 * x1;
-  float B = 2 * y2 - 2 * y1;
-  float C = pow(d1, 2) - pow(d2, 2) - pow(x1, 2) + pow(x2, 2) - pow(y1, 2) + pow(y2, 2);
+void runCalibration() {
+  Serial.println("\n=== STARTING CALIBRATION ===");
   
-  float D = 2 * x3 - 2 * x2;
-  float E = 2 * y3 - 2 * y2;
-  float F = pow(d2, 2) - pow(d3, 2) - pow(x2, 2) + pow(x3, 2) - pow(y2, 2) + pow(y3, 2);
-
-  float denominator = (A * E - B * D);
+  // STAGE 1: Find 'A'
+  Serial.println("STAGE 1: Place the ESP32 exactly 1.0 meter from 'Channel_1'.");
+  Serial.println("You have 10 seconds to position it...");
+  for(int i=10; i>0; i--) { Serial.printf("%d... ", i); delay(1000); }
+  Serial.println("\nCalculating A parameter...");
   
-  if (abs(denominator) < 0.0001) {
-    Serial.println("Math Error: Beacons are collinear. Move them to form a triangle.");
-    return false;
+  CALIBRATED_A = sampleCalibrationRSSI("Channel_1", 20);
+  Serial.printf("=> Calibrated A (RSSI at 1m): %.2f dBm\n\n", CALIBRATED_A);
+
+  // STAGE 2: Find 'n'
+  Serial.printf("STAGE 2: Move the ESP32 exactly %.1f meters away from 'Channel_1'.\n", CALIBRATION_DIST_2);
+  Serial.println("You have 10 seconds to move it...");
+  for(int i=10; i>0; i--) { Serial.printf("%d... ", i); delay(1000); }
+  Serial.println("\nCalculating Path Loss Exponent (n)...");
+  
+  float rssi_d2 = sampleCalibrationRSSI("Channel_1", 20);
+  Serial.printf("RSSI at %.1fm: %.2f dBm\n", CALIBRATION_DIST_2, rssi_d2);
+  
+  CALIBRATED_N = (CALIBRATED_A - rssi_d2) / (10.0 * log10(CALIBRATION_DIST_2));
+  
+  if (CALIBRATED_N < 1.0 || CALIBRATED_N > 6.0) {
+    Serial.println("WARNING: Calculated 'n' is outside typical indoor bounds. Check for heavy interference.");
   }
+  
+  Serial.printf("=> Calibrated n (Path Loss): %.2f\n", CALIBRATED_N);
+  Serial.println("=== CALIBRATION COMPLETE. STARTING SCANNER ===\n");
+}
 
-  posX = (C * E - F * B) / denominator;
-  posY = (C * D - A * F) / (B * D - A * E);
-  return true;
+/* ================= TERMINAL PRINTING ================= */
+void printBeaconData() {
+  Serial.println("\n--- Current Beacon Status ---");
+  for (int i = 0; i < 5; i++) {
+    // Formatted to show Raw, Filtered, and Distance cleanly
+    Serial.printf("%-10s | Raw: %6.2f dBm | Filtered: %6.2f dBm | Dist: %5.2f m\n", 
+                  beacons[i].ssid.c_str(), 
+                  beacons[i].raw_rssi,
+                  beacons[i].x_est, 
+                  beacons[i].distance);
+  }
+  Serial.println("-----------------------------");
 }
 
 /* ================= SETUP ================= */
@@ -99,42 +122,41 @@ void setup() {
   WiFi.mode(WIFI_STA);
   WiFi.disconnect(true);
   delay(100);
-  Serial.println("Scanner Ready. Waiting for beacons...");
+  
+  runCalibration();
 }
 
 /* ================= LOOP ================= */
 void loop() {
-  for (int i = 0; i < 3; i++) beacons[i].visible = false;
+  for (int i = 0; i < 5; i++) beacons[i].visible = false;
 
   int n = WiFi.scanNetworks();
   
   if (n > 0) {
-    Serial.println("\n\n");
     for (int i = 0; i < n; ++i) {
       String foundSSID = WiFi.SSID(i);
       int rawRSSI = WiFi.RSSI(i);
-      if (rawRSSI >= -70) {
-        Serial.printf("RSSI for %s: %d\n", foundSSID.c_str(), rawRSSI);
-      }
 
-      for (int b = 0; b < 3; b++) {
+      for (int b = 0; b < 5; b++) {
         if (foundSSID == beacons[b].ssid) {
+          beacons[b].raw_rssi = rawRSSI; // Save the raw measurement for printing
           float filtered = kalmanFilter(rawRSSI, beacons[b]);
-          beacons[b].distance = rssiToDistance(filtered);
+          beacons[b].distance = rssiToDistance(filtered); // Calculate distance using filtered RSSI
           beacons[b].visible = true;
         }
       }
     }
   }
 
-  // Only calculate and send data if we have a full positional lock
-  if (beacons[0].visible && beacons[1].visible && beacons[2].visible) {
-    if (calculatePosition()) {
-      
-      sendTelemetry(); // Dispatches the $DATA payload with CRC
-    }
+  bool allVisible = true;
+  for (int i = 0; i < 5; i++) {
+    if (!beacons[i].visible) allVisible = false;
+  }
+
+  if (allVisible) {
+    printBeaconData(); 
   } else {
-    Serial.println("Waiting for all 3 beacons...");
+    Serial.println("Waiting for all 5 beacons to appear in a single scan...");
   }
 
   WiFi.scanDelete();
