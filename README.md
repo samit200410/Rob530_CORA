@@ -74,4 +74,9 @@ def main():
     run_baseline(ARGS3, "range_odom_0_01.pyfg", "rssi_odom_0_01.pyfg")
     run_experiment_baseline(ARGS3, "hardware_0_01.pyfg")
 
+    run_rssi_sweep()
+    run_range_noise_sweep()
+    run_measurement_interval_sweep()
+
+
 ```
