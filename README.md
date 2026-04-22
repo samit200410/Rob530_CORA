@@ -29,3 +29,62 @@ RA-Research Library
 - Datasets can be generated as RSSI-to-distance with noise injected into the RSSI measurement, or as noisy range data where noise is injected into the range measurement.
 - Options are available for data analysis and plotting
   ![Trajectory Plot](images/odometry_graph)
+
+How to use RA-Research:
+1. Open world.py
+2. Define world size, landmark locations in make_world()
+3. Define a trajectory in generate_custom_loop()
+4. Open main.py
+5. Define experiments and paramter sweeps in main() function
+
+Example main():
+This code shows how arguments can be configured and used to run parameter sweeping experiments.
+
+```python
+def main():
+    
+    ARGS2 = dict(
+        sigma_dx=0.005,
+        sigma_dy=0.005,
+        sigma_dtheta=0.0025,
+        sigma_range=0.2,
+        A=-55.0,
+        n=2.5,
+        sigma_rssi=7,
+        max_range=50.0,
+        measure_every=1,
+        dropout_prob=0.0,
+        seed=0,
+    )
+    run_baseline(ARGS2,"range_odom_0_005.pyfg", "rssi_odom_0_005.pyfg",)
+    run_experiment_baseline(ARGS2, "hardware_0_005.pyfg")
+    ARGS3 = dict(
+        sigma_dx=0.01,
+        sigma_dy=0.01,
+        sigma_dtheta=0.005,
+        sigma_range=0.2,
+        A=-55.0,
+        n=2.5,
+        sigma_rssi=7,
+        max_range=50.0,
+        measure_every=1,
+        dropout_prob=0.0,
+        seed=0,
+    )
+    run_baseline(ARGS3, "range_odom_0_01.pyfg", "rssi_odom_0_01.pyfg")
+    run_experiment_baseline(ARGS3, "hardware_0_01.pyfg")
+
+    ARGS4 = dict(
+        sigma_dx=0.02,
+        sigma_dy=0.02,
+        sigma_dtheta=0.01,
+        sigma_range=0.2,
+        A=-55.0,
+        n=2.5,
+        sigma_rssi=7,
+        max_range=50.0,
+        measure_every=1,
+        dropout_prob=0.0,
+        seed=0,
+    )
+```
