@@ -38,7 +38,7 @@ How to use RA-Research:
 5. Define experiments and paramter sweeps in main() function
 
 Example main():
-This code shows how arguments can be configured and used to run parameter sweeping experiments.
+This code shows how arguments can be configured and used to run parameter sweeping experiments. In this code, different odometry noise profiles were used to generate pyfactor files that can now be fed to CORA for estimation and smoothing.
 
 ```python
 def main():
@@ -74,17 +74,4 @@ def main():
     run_baseline(ARGS3, "range_odom_0_01.pyfg", "rssi_odom_0_01.pyfg")
     run_experiment_baseline(ARGS3, "hardware_0_01.pyfg")
 
-    ARGS4 = dict(
-        sigma_dx=0.02,
-        sigma_dy=0.02,
-        sigma_dtheta=0.01,
-        sigma_range=0.2,
-        A=-55.0,
-        n=2.5,
-        sigma_rssi=7,
-        max_range=50.0,
-        measure_every=1,
-        dropout_prob=0.0,
-        seed=0,
-    )
 ```
