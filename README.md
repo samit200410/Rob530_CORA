@@ -40,6 +40,8 @@ How to author RA-SLAM datasets with RA-Research:
 Example main():
 This code shows how arguments can be configured and used to run parameter sweeping experiments. In this code, different odometry noise profiles were used to generate pyfactor files that can now be fed to CORA for estimation and smoothing.
 
+Apart from configuration and experimentation, there are dedicated paramter sweep files that output plots of RMSE values along different parameter values.
+
 ```python
 def main():
     
