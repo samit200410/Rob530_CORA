@@ -1,0 +1,5 @@
+filename,cost,fsdp,suboptimality_gap,time_seconds,iterations,certified
+Num pose-pose and pose-landmark measurements: 13
+Num pose-pose, pose-landmark, and priors: 13
+Checking certification of refined solution.
+/home/kevin4335/ECE568-proj/all_sweeps/esp32/experiment.pyfg,568.26451946304076,560.73424847277499,0.01342930454270509,0.01908344,6,0

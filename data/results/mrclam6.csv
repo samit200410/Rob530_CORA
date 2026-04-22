@@ -1,0 +1,3 @@
+filename,cost,fsdp,suboptimality_gap,time_seconds,iterations,certified
+Num pose-pose and pose-landmark measurements: 24390
+Num pose-pose, pose-landmark, and priors: 24390

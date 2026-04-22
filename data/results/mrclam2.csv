@@ -1,0 +1,81 @@
+filename,cost,fsdp,suboptimality_gap,time_seconds,iterations,certified
+Num pose-pose and pose-landmark measurements: 67527
+Num pose-pose, pose-landmark, and priors: 67527
+Checking certification of refined solution.
+/home/kevin4335/ECE568-proj/all_sweeps/mrclam2/rs0.0_or0.05.pyfg,3409821.6909738719,3396922.8812290463,0.0037972041744317279,110.52911358,35,0
+Num pose-pose and pose-landmark measurements: 67527
+Num pose-pose, pose-landmark, and priors: 67527
+Checking certification of refined solution.
+/home/kevin4335/ECE568-proj/all_sweeps/mrclam2/rs0.0_or0.0.pyfg,7039.8836155216459,7032.9614481460267,0.00098424645530283367,48.858125524000002,11,0
+Num pose-pose and pose-landmark measurements: 67527
+Num pose-pose, pose-landmark, and priors: 67527
+Checking certification of refined solution.
+/home/kevin4335/ECE568-proj/all_sweeps/mrclam2/rs0.0_or0.1.pyfg,6468091.4168572733,6440224.995261305,0.0043269329280378127,128.47305133899999,44,0
+Num pose-pose and pose-landmark measurements: 67527
+Num pose-pose, pose-landmark, and priors: 67527
+Checking certification of refined solution.
+/home/kevin4335/ECE568-proj/all_sweeps/mrclam2/rs0.0_or0.2.pyfg,12165794.890884697,12106075.190024763,0.0049330356802295668,127.719137506,87,0
+Num pose-pose and pose-landmark measurements: 67527
+Num pose-pose, pose-landmark, and priors: 67527
+Checking certification of refined solution.
+/home/kevin4335/ECE568-proj/all_sweeps/mrclam2/rs0.5_or0.05.pyfg,3259827.230315432,3247476.6365383631,0.0038031355293240737,119.246330164,38,0
+Num pose-pose and pose-landmark measurements: 67527
+Num pose-pose, pose-landmark, and priors: 67527
+Checking certification of refined solution.
+/home/kevin4335/ECE568-proj/all_sweeps/mrclam2/rs0.5_or0.0.pyfg,79861.968336184393,79745.616256653593,0.0014590404462651784,69.326380388999993,24,0
+Num pose-pose and pose-landmark measurements: 67527
+Num pose-pose, pose-landmark, and priors: 67527
+Checking certification of refined solution.
+/home/kevin4335/ECE568-proj/all_sweeps/mrclam2/rs0.5_or0.1.pyfg,6317533.3540630629,6290907.5272220885,0.0042324301741455909,108.76368741100001,30,0
+Num pose-pose and pose-landmark measurements: 67527
+Num pose-pose, pose-landmark, and priors: 67527
+Checking certification of refined solution.
+/home/kevin4335/ECE568-proj/all_sweeps/mrclam2/rs0.5_or0.2.pyfg,11393002.576009892,11342288.892320164,0.0044712036671951186,151.56772838500001,47,0
+Num pose-pose and pose-landmark measurements: 67527
+Num pose-pose, pose-landmark, and priors: 67527
+Checking certification of refined solution.
+/home/kevin4335/ECE568-proj/all_sweeps/mrclam2/rs1.0_or0.05.pyfg,3453561.7876059748,3441275.5652616746,0.0035702523995244186,124.236342355,49,0
+Num pose-pose and pose-landmark measurements: 67527
+Num pose-pose, pose-landmark, and priors: 67527
+Checking certification of refined solution.
+/home/kevin4335/ECE568-proj/all_sweeps/mrclam2/rs1.0_or0.0.pyfg,285868.44295032031,285281.99331529095,0.0020556840206217447,103.420546367,31,0
+Num pose-pose and pose-landmark measurements: 67527
+Num pose-pose, pose-landmark, and priors: 67527
+Checking certification of refined solution.
+/home/kevin4335/ECE568-proj/all_sweeps/mrclam2/rs1.0_or0.1.pyfg,6500786.3076013131,6473459.0565767158,0.0042214294994009707,126.526167143,55,0
+Num pose-pose and pose-landmark measurements: 67527
+Num pose-pose, pose-landmark, and priors: 67527
+Checking certification of refined solution.
+/home/kevin4335/ECE568-proj/all_sweeps/mrclam2/rs1.0_or0.2.pyfg,11547676.964987941,11493781.263530621,0.0046891184216571978,129.19061565000001,47,0
+Num pose-pose and pose-landmark measurements: 67527
+Num pose-pose, pose-landmark, and priors: 67527
+Checking certification of refined solution.
+/home/kevin4335/ECE568-proj/all_sweeps/mrclam2/rs2.0_or0.05.pyfg,4046528.6745333299,4030531.4491565893,0.0039690114265422917,116.478718027,47,0
+Num pose-pose and pose-landmark measurements: 67527
+Num pose-pose, pose-landmark, and priors: 67527
+Checking certification of refined solution.
+/home/kevin4335/ECE568-proj/all_sweeps/mrclam2/rs2.0_or0.0.pyfg,937906.4192675231,934033.67568519071,0.0041462569103746863,136.233046164,21,0
+Num pose-pose and pose-landmark measurements: 67527
+Num pose-pose, pose-landmark, and priors: 67527
+Checking certification of refined solution.
+/home/kevin4335/ECE568-proj/all_sweeps/mrclam2/rs2.0_or0.1.pyfg,7028922.8553237636,6997836.9367927862,0.004442218189957492,103.971212318,61,0
+Num pose-pose and pose-landmark measurements: 67527
+Num pose-pose, pose-landmark, and priors: 67527
+Checking certification of refined solution.
+/home/kevin4335/ECE568-proj/all_sweeps/mrclam2/rs2.0_or0.2.pyfg,11963932.101292815,11900605.948635861,0.00532125447479527,107.448730802,48,0
+Num pose-pose and pose-landmark measurements: 67527
+Num pose-pose, pose-landmark, and priors: 67527
+Checking certification of refined solution.
+/home/kevin4335/ECE568-proj/all_sweeps/mrclam2/rs5.0_or0.05.pyfg,6778607.3649785975,6746399.7470554058,0.0047740452879699831,108.15091324399999,65,0
+Num pose-pose and pose-landmark measurements: 67527
+Num pose-pose, pose-landmark, and priors: 67527
+Checking certification of refined solution.
+/home/kevin4335/ECE568-proj/all_sweeps/mrclam2/rs5.0_or0.0.pyfg,4032217.0169473961,4007135.0931449449,0.0062593157503871497,135.295336846,43,0
+Num pose-pose and pose-landmark measurements: 67527
+Num pose-pose, pose-landmark, and priors: 67527
+Checking certification of refined solution.
+/home/kevin4335/ECE568-proj/all_sweeps/mrclam2/rs5.0_or0.1.pyfg,9365108.1266963966,9305876.8560487498,0.0063649317054036642,114.219595983,67,0
+Num pose-pose and pose-landmark measurements: 67527
+Num pose-pose, pose-landmark, and priors: 67527
+Checking certification of refined solution.
+/home/kevin4335/ECE568-proj/all_sweeps/mrclam2/rs5.0_or0.2.pyfg,13589852.510552857,13513033.457381302,0.0056848118828265954,109.94411938499999,66,0

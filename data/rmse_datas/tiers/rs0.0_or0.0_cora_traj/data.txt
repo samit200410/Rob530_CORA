@@ -1,0 +1,4 @@
+pyfg: /home/kevin4335/ECE568-proj/all_sweeps/tiers/rs0.0_or0.0.pyfg
+cora_csv: /home/kevin4335/ECE568-proj/cora_trajectories/tiers/rs0.0_or0.0_cora_traj.csv
+Poses compared: 9768 (of 9768 CSV rows, 9768 GT poses)
+Translation RMSE (m): 0.039308

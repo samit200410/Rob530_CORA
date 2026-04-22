@@ -1,0 +1,65 @@
+filename,cost,fsdp,suboptimality_gap,time_seconds,iterations,certified
+Num pose-pose and pose-landmark measurements: 13
+Num pose-pose, pose-landmark, and priors: 13
+Checking certification of refined solution.
+/home/kevin4335/ECE568-proj/pure_simulated_range/UWB_adjacent/range_0_5.pyfg,0.080063765555040495,0.076808803770084033,0.042377457077703171,0.018206720999999999,5,0
+Num pose-pose and pose-landmark measurements: 13
+Num pose-pose, pose-landmark, and priors: 13
+Checking certification of refined solution.
+/home/kevin4335/ECE568-proj/pure_simulated_range/UWB_adjacent/range_10.pyfg,29.227089435714404,29.14496866151665,0.0028176655515223716,0.014815531999999999,5,0
+Num pose-pose and pose-landmark measurements: 13
+Num pose-pose, pose-landmark, and priors: 13
+Checking certification of refined solution.
+/home/kevin4335/ECE568-proj/pure_simulated_range/UWB_adjacent/range_11.pyfg,35.380528447732011,35.283874099728941,0.0027393349077791131,0.014006729000000001,5,0
+Num pose-pose and pose-landmark measurements: 13
+Num pose-pose, pose-landmark, and priors: 13
+Checking certification of refined solution.
+/home/kevin4335/ECE568-proj/pure_simulated_range/UWB_adjacent/range_12.pyfg,42.123109209616871,42.010916825310893,0.0026705531034348544,0.013599175,5,0
+Num pose-pose and pose-landmark measurements: 13
+Num pose-pose, pose-landmark, and priors: 13
+Checking certification of refined solution.
+/home/kevin4335/ECE568-proj/pure_simulated_range/UWB_adjacent/range_13.pyfg,49.455209201288923,49.326538489673524,0.002608549384472544,0.018581130000000001,4,0
+Num pose-pose and pose-landmark measurements: 13
+Num pose-pose, pose-landmark, and priors: 13
+Checking certification of refined solution.
+/home/kevin4335/ECE568-proj/pure_simulated_range/UWB_adjacent/range_14_0.pyfg,57.377202219889917,57.231158648125941,0.0025518192399684655,0.015137361,4,0
+Num pose-pose and pose-landmark measurements: 13
+Num pose-pose, pose-landmark, and priors: 13
+Checking certification of refined solution.
+/home/kevin4335/ECE568-proj/pure_simulated_range/UWB_adjacent/range_15_0.pyfg,65.889458519859517,65.725209713954669,0.0024990229262056569,0.012280757999999999,5,0
+Num pose-pose and pose-landmark measurements: 13
+Num pose-pose, pose-landmark, and priors: 13
+Checking certification of refined solution.
+/home/kevin4335/ECE568-proj/pure_simulated_range/UWB_adjacent/range_1.pyfg,0.29466486237183093,0.29153488349989809,0.010736207051304483,0.018899639999999999,5,0
+Num pose-pose and pose-landmark measurements: 13
+Num pose-pose, pose-landmark, and priors: 13
+Checking certification of refined solution.
+/home/kevin4335/ECE568-proj/pure_simulated_range/UWB_adjacent/range_2.pyfg,1.1629428580506374,1.1562757181231567,0.0057660468199597402,0.016700850999999999,5,0
+Num pose-pose and pose-landmark measurements: 13
+Num pose-pose, pose-landmark, and priors: 13
+Checking certification of refined solution.
+/home/kevin4335/ECE568-proj/pure_simulated_range/UWB_adjacent/range_3.pyfg,2.6169582917586585,2.6052420169660766,0.0044971924743582928,0.018600703,4,0
+Num pose-pose and pose-landmark measurements: 13
+Num pose-pose, pose-landmark, and priors: 13
+Checking certification of refined solution.
+/home/kevin4335/ECE568-proj/pure_simulated_range/UWB_adjacent/range_4.pyfg,4.6570789966831132,4.6389739931020308,0.0039028034233439925,0.015431653,4,0
+Num pose-pose and pose-landmark measurements: 13
+Num pose-pose, pose-landmark, and priors: 13
+Checking certification of refined solution.
+/home/kevin4335/ECE568-proj/pure_simulated_range/UWB_adjacent/range_5.pyfg,7.2836773033718476,7.2578879340147768,0.0035532884485865997,0.018107207,4,0
+Num pose-pose and pose-landmark measurements: 13
+Num pose-pose, pose-landmark, and priors: 13
+Checking certification of refined solution.
+/home/kevin4335/ECE568-proj/pure_simulated_range/UWB_adjacent/range_6.pyfg,10.497129444154979,10.4624037501872,0.0033190932788421403,0.015924794999999999,4,0
+Num pose-pose and pose-landmark measurements: 13
+Num pose-pose, pose-landmark, and priors: 13
+Checking certification of refined solution.
+/home/kevin4335/ECE568-proj/pure_simulated_range/UWB_adjacent/range_7.pyfg,14.297814819594567,14.252944684691954,0.0031481308526233724,0.015404645999999999,5,0
+Num pose-pose and pose-landmark measurements: 13
+Num pose-pose, pose-landmark, and priors: 13
+Checking certification of refined solution.
+/home/kevin4335/ECE568-proj/pure_simulated_range/UWB_adjacent/range_8.pyfg,18.686114894820378,18.629934604448362,0.0030155924626059189,0.01426648,4,0
+Num pose-pose and pose-landmark measurements: 13
+Num pose-pose, pose-landmark, and priors: 13
+Checking certification of refined solution.
+/home/kevin4335/ECE568-proj/pure_simulated_range/UWB_adjacent/range_9.pyfg,23.662412129993633,23.593800489724828,0.0029080368081728209,0.013977518,4,0

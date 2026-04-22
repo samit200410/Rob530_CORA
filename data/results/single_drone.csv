@@ -1,0 +1,81 @@
+filename,cost,fsdp,suboptimality_gap,time_seconds,iterations,certified
+Num pose-pose and pose-landmark measurements: 1753
+Num pose-pose, pose-landmark, and priors: 1753
+Checking certification of refined solution.
+/home/kevin4335/ECE568-proj/all_sweeps/single_drone/rs0.0_or0.05.pyfg,411797.20537530986,411767.21422773827,7.2835200412544812e-05,5.1983831970000001,9,0
+Num pose-pose and pose-landmark measurements: 1753
+Num pose-pose, pose-landmark, and priors: 1753
+Checking certification of refined solution.
+/home/kevin4335/ECE568-proj/all_sweeps/single_drone/rs0.0_or0.0.pyfg,7.6975800022258305,7.2332671871279395,0.064191298770791341,4.9061866419999998,15,0
+Num pose-pose and pose-landmark measurements: 1753
+Num pose-pose, pose-landmark, and priors: 1753
+Checking certification of refined solution.
+/home/kevin4335/ECE568-proj/all_sweeps/single_drone/rs0.0_or0.1.pyfg,848086.17036271619,848020.26216594828,7.7720073102464398e-05,5.9192373140000001,20,0
+Num pose-pose and pose-landmark measurements: 1753
+Num pose-pose, pose-landmark, and priors: 1753
+Checking certification of refined solution.
+/home/kevin4335/ECE568-proj/all_sweeps/single_drone/rs0.0_or0.2.pyfg,1603426.1005453449,1603342.9680392633,5.1849484320416357e-05,5.4540262220000004,10,0
+Num pose-pose and pose-landmark measurements: 1753
+Num pose-pose, pose-landmark, and priors: 1753
+Checking certification of refined solution.
+/home/kevin4335/ECE568-proj/all_sweeps/single_drone/rs0.5_or0.05.pyfg,424440.30673261988,424413.41800010664,6.3355048103666347e-05,4.8510126690000002,15,0
+Num pose-pose and pose-landmark measurements: 1753
+Num pose-pose, pose-landmark, and priors: 1753
+Checking certification of refined solution.
+/home/kevin4335/ECE568-proj/all_sweeps/single_drone/rs0.5_or0.0.pyfg,1889.9714429113214,1889.1178371017486,0.00045185418972192964,7.5752713250000001,28,1
+Num pose-pose and pose-landmark measurements: 1753
+Num pose-pose, pose-landmark, and priors: 1753
+Checking certification of refined solution.
+/home/kevin4335/ECE568-proj/all_sweeps/single_drone/rs0.5_or0.1.pyfg,1019726.8876115538,1019669.981071785,5.5808782081610822e-05,5.4615211739999996,21,0
+Num pose-pose and pose-landmark measurements: 1753
+Num pose-pose, pose-landmark, and priors: 1753
+Checking certification of refined solution.
+/home/kevin4335/ECE568-proj/all_sweeps/single_drone/rs0.5_or0.2.pyfg,1668350.932132266,1668273.5308075764,4.6396063511331225e-05,5.1085862420000003,20,0
+Num pose-pose and pose-landmark measurements: 1753
+Num pose-pose, pose-landmark, and priors: 1753
+Checking certification of refined solution.
+/home/kevin4335/ECE568-proj/all_sweeps/single_drone/rs1.0_or0.05.pyfg,429692.99376010121,429684.39802115993,2.0004773226270149e-05,4.6076232959999999,34,0
+Num pose-pose and pose-landmark measurements: 1753
+Num pose-pose, pose-landmark, and priors: 1753
+Checking certification of refined solution.
+/home/kevin4335/ECE568-proj/all_sweeps/single_drone/rs1.0_or0.0.pyfg,7536.8068907423421,7535.4101799315467,0.0001853529904072322,5.0479481650000002,5,1
+Num pose-pose and pose-landmark measurements: 1753
+Num pose-pose, pose-landmark, and priors: 1753
+Checking certification of refined solution.
+/home/kevin4335/ECE568-proj/all_sweeps/single_drone/rs1.0_or0.1.pyfg,1025775.8479856304,1025647.1727474749,0.0001254576052804157,6.5070410110000001,13,0
+Num pose-pose and pose-landmark measurements: 1753
+Num pose-pose, pose-landmark, and priors: 1753
+Checking certification of refined solution.
+/home/kevin4335/ECE568-proj/all_sweeps/single_drone/rs1.0_or0.2.pyfg,1671691.8036149279,1671564.312552437,7.6270509925096668e-05,6.0533547619999997,14,0
+Num pose-pose and pose-landmark measurements: 1753
+Num pose-pose, pose-landmark, and priors: 1753
+Checking certification of refined solution.
+/home/kevin4335/ECE568-proj/all_sweeps/single_drone/rs2.0_or0.05.pyfg,450884.15582581219,450867.89282723516,3.6070429577615557e-05,4.1085187799999998,10,0
+Num pose-pose and pose-landmark measurements: 1753
+Num pose-pose, pose-landmark, and priors: 1753
+Checking certification of refined solution.
+/home/kevin4335/ECE568-proj/all_sweeps/single_drone/rs2.0_or0.0.pyfg,29819.298038092551,29811.943174407166,0.00024670863091201463,11.908120952000001,55,1
+Num pose-pose and pose-landmark measurements: 1753
+Num pose-pose, pose-landmark, and priors: 1753
+Checking certification of refined solution.
+/home/kevin4335/ECE568-proj/all_sweeps/single_drone/rs2.0_or0.1.pyfg,1047540.9141988438,1047465.5062939376,7.1990823996678297e-05,5.3584716879999998,18,0
+Num pose-pose and pose-landmark measurements: 1753
+Num pose-pose, pose-landmark, and priors: 1753
+Checking certification of refined solution.
+/home/kevin4335/ECE568-proj/all_sweeps/single_drone/rs2.0_or0.2.pyfg,1687283.4302385054,1687194.8502513838,5.2501338009842268e-05,6.373240859,31,0
+Num pose-pose and pose-landmark measurements: 1753
+Num pose-pose, pose-landmark, and priors: 1753
+Checking certification of refined solution.
+/home/kevin4335/ECE568-proj/all_sweeps/single_drone/rs5.0_or0.05.pyfg,567369.30875903822,567351.88648656919,3.0708054179433704e-05,3.8178172190000002,14,0
+Num pose-pose and pose-landmark measurements: 1753
+Num pose-pose, pose-landmark, and priors: 1753
+Checking certification of refined solution.
+/home/kevin4335/ECE568-proj/all_sweeps/single_drone/rs5.0_or0.0.pyfg,153139.86427324329,153116.13879813044,0.00015495084514983258,6.0269421699999999,10,0
+Num pose-pose and pose-landmark measurements: 1753
+Num pose-pose, pose-landmark, and priors: 1753
+Checking certification of refined solution.
+/home/kevin4335/ECE568-proj/all_sweeps/single_drone/rs5.0_or0.1.pyfg,1152260.6168715868,1152161.1560996936,8.6325399330286934e-05,6.1387930380000002,18,0
+Num pose-pose and pose-landmark measurements: 1753
+Num pose-pose, pose-landmark, and priors: 1753
+Checking certification of refined solution.
+/home/kevin4335/ECE568-proj/all_sweeps/single_drone/rs5.0_or0.2.pyfg,1761370.4860000287,1761246.0323425722,7.0662278393274425e-05,5.1439871320000004,19,0

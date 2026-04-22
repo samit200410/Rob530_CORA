@@ -1,0 +1,4 @@
+pyfg: /home/kevin4335/ECE568-proj/cora/examples/data/plaza2.pyfg
+cora_csv: /home/kevin4335/ECE568-proj/cora_trajectories/plaza2/rs1.0_or0.1_cora_traj.csv
+Poses compared: 4091 (of 4091 CSV rows, 4091 GT poses)
+Translation RMSE (m): 50.168291

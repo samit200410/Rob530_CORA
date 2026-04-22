@@ -1,0 +1,4 @@
+pyfg: /home/kevin4335/ECE568-proj/all_sweeps/factor_graph_small/rs0.0_or0.2.pyfg
+cora_csv: /home/kevin4335/ECE568-proj/cora_trajectories/factor_graph_small/rs0.0_or0.2_cora_traj.csv
+Poses compared: 6 (of 6 CSV rows, 6 GT poses)
+Translation RMSE (m): 9.410212

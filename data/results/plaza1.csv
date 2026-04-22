@@ -1,0 +1,81 @@
+filename,cost,fsdp,suboptimality_gap,time_seconds,iterations,certified
+Num pose-pose and pose-landmark measurements: 9657
+Num pose-pose, pose-landmark, and priors: 9657
+Checking certification of refined solution.
+/home/kevin4335/ECE568-proj/all_sweeps/plaza1/rs0.0_or0.05.pyfg,12298713.073196575,12075688.688162163,0.018468875009426476,6.8771595100000003,22,0
+Num pose-pose and pose-landmark measurements: 9657
+Num pose-pose, pose-landmark, and priors: 9657
+Checking certification of refined solution.
+/home/kevin4335/ECE568-proj/all_sweeps/plaza1/rs0.0_or0.0.pyfg,1332.7948160447118,1280.5323266319663,0.040813096495740463,19.834871344,8,0
+Num pose-pose and pose-landmark measurements: 9657
+Num pose-pose, pose-landmark, and priors: 9657
+Checking certification of refined solution.
+/home/kevin4335/ECE568-proj/all_sweeps/plaza1/rs0.0_or0.1.pyfg,26696885.308809571,26164052.830691107,0.020365058944287032,9.2985857099999993,15,0
+Num pose-pose and pose-landmark measurements: 9657
+Num pose-pose, pose-landmark, and priors: 9657
+Checking certification of refined solution.
+/home/kevin4335/ECE568-proj/all_sweeps/plaza1/rs0.0_or0.2.pyfg,52453908.997152165,51809575.295189798,0.012436575638599939,10.803824683,23,0
+Num pose-pose and pose-landmark measurements: 9657
+Num pose-pose, pose-landmark, and priors: 9657
+Checking certification of refined solution.
+/home/kevin4335/ECE568-proj/all_sweeps/plaza1/rs0.5_or0.05.pyfg,12055031.673769636,11840829.448131045,0.018090136892597537,8.5541567989999994,29,0
+Num pose-pose and pose-landmark measurements: 9657
+Num pose-pose, pose-landmark, and priors: 9657
+Checking certification of refined solution.
+/home/kevin4335/ECE568-proj/all_sweeps/plaza1/rs0.5_or0.0.pyfg,2668.4898005402433,2534.2158138233422,0.052984432495637987,20.533627748000001,9,0
+Num pose-pose and pose-landmark measurements: 9657
+Num pose-pose, pose-landmark, and priors: 9657
+Checking certification of refined solution.
+/home/kevin4335/ECE568-proj/all_sweeps/plaza1/rs0.5_or0.1.pyfg,25133375.778094299,24591523.413718455,0.022034111317949932,8.2909044529999996,19,0
+Num pose-pose and pose-landmark measurements: 9657
+Num pose-pose, pose-landmark, and priors: 9657
+Checking certification of refined solution.
+/home/kevin4335/ECE568-proj/all_sweeps/plaza1/rs0.5_or0.2.pyfg,47703603.785948806,46770322.283227362,0.01995456642504545,9.6440896889999994,36,0
+Num pose-pose and pose-landmark measurements: 9657
+Num pose-pose, pose-landmark, and priors: 9657
+Checking certification of refined solution.
+/home/kevin4335/ECE568-proj/all_sweeps/plaza1/rs1.0_or0.05.pyfg,12058582.477846708,11843973.561132824,0.018119672051459534,10.469368294000001,18,0
+Num pose-pose and pose-landmark measurements: 9657
+Num pose-pose, pose-landmark, and priors: 9657
+Checking certification of refined solution.
+/home/kevin4335/ECE568-proj/all_sweeps/plaza1/rs1.0_or0.0.pyfg,6706.5103130931457,6313.7743106872513,0.062203047350158649,29.763218470000002,8,0
+Num pose-pose and pose-landmark measurements: 9657
+Num pose-pose, pose-landmark, and priors: 9657
+Checking certification of refined solution.
+/home/kevin4335/ECE568-proj/all_sweeps/plaza1/rs1.0_or0.1.pyfg,25129066.092995908,24586946.848669186,0.022049067241387277,9.6471536499999999,19,0
+Num pose-pose and pose-landmark measurements: 9657
+Num pose-pose, pose-landmark, and priors: 9657
+Checking certification of refined solution.
+/home/kevin4335/ECE568-proj/all_sweeps/plaza1/rs1.0_or0.2.pyfg,47719457.48567234,46767725.213852815,0.020350193802832577,14.095279445999999,34,0
+Num pose-pose and pose-landmark measurements: 9657
+Num pose-pose, pose-landmark, and priors: 9657
+Checking certification of refined solution.
+/home/kevin4335/ECE568-proj/all_sweeps/plaza1/rs2.0_or0.05.pyfg,12077506.182359725,11857616.695163716,0.01854415544446587,10.370529388,34,0
+Num pose-pose and pose-landmark measurements: 9657
+Num pose-pose, pose-landmark, and priors: 9657
+Checking certification of refined solution.
+/home/kevin4335/ECE568-proj/all_sweeps/plaza1/rs2.0_or0.0.pyfg,22890.177322149699,21384.72794374259,0.070398341394266858,12.355753877,10,0
+Num pose-pose and pose-landmark measurements: 9657
+Num pose-pose, pose-landmark, and priors: 9657
+Checking certification of refined solution.
+/home/kevin4335/ECE568-proj/all_sweeps/plaza1/rs2.0_or0.1.pyfg,25160342.393140361,24612301.209654033,0.022266962313599571,10.135281491000001,19,0
+Num pose-pose and pose-landmark measurements: 9657
+Num pose-pose, pose-landmark, and priors: 9657
+Checking certification of refined solution.
+/home/kevin4335/ECE568-proj/all_sweeps/plaza1/rs2.0_or0.2.pyfg,47801167.928978488,46786291.541863419,0.021691746741820263,11.842748751,29,0
+Num pose-pose and pose-landmark measurements: 9657
+Num pose-pose, pose-landmark, and priors: 9657
+Checking certification of refined solution.
+/home/kevin4335/ECE568-proj/all_sweeps/plaza1/rs5.0_or0.05.pyfg,12181042.817702169,11956061.992142769,0.018817301692417781,14.191206276999999,22,0
+Num pose-pose and pose-landmark measurements: 9657
+Num pose-pose, pose-landmark, and priors: 9657
+Checking certification of refined solution.
+/home/kevin4335/ECE568-proj/all_sweeps/plaza1/rs5.0_or0.0.pyfg,136152.27552679245,126152.24811888637,0.079269514075421085,12.448533888,11,0
+Num pose-pose and pose-landmark measurements: 9657
+Num pose-pose, pose-landmark, and priors: 9657
+Checking certification of refined solution.
+/home/kevin4335/ECE568-proj/all_sweeps/plaza1/rs5.0_or0.1.pyfg,25272059.589198783,24709667.431201953,0.022760005150319142,13.745677323000001,29,0
+Num pose-pose and pose-landmark measurements: 9657
+Num pose-pose, pose-landmark, and priors: 9657
+Checking certification of refined solution.
+/home/kevin4335/ECE568-proj/all_sweeps/plaza1/rs5.0_or0.2.pyfg,47866047.487088248,46837902.488224231,0.021951132400143427,11.835588071,38,0
