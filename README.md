@@ -25,3 +25,5 @@ RA-Research Library
 -
 - Simulation tools for authoring Range Aided SLAM datasets.
 - Datasets can be generated as RSSI-to-distance with noise injected into the RSSI measurement, or as noisy range data where noise is injected into the range measurement.
+- Options are available for data analysis and plotting
+  
