@@ -20,7 +20,7 @@ CORA Solver
 -
 - C++ library for running CORA on Range Aided SLAM datasets.
 - For setup instructions, visit https://github.com/MarineRoboticsGroup/cora
-
+![alt text](images/CORA_estimate.png)
 RA-Research Library
 -
 - Simulation tools for authoring Range Aided SLAM datasets.
