@@ -36,6 +36,7 @@ How to author RA-SLAM datasets with RA-Research:
 3. Define a trajectory in generate_custom_loop()
 4. Open main.py
 5. Define experiments and paramter sweeps in main() function
+6. run ```bash python3 main.py```
 
 Example main():
 This code shows how arguments can be configured and used to run parameter sweeping experiments. In this code, different odometry noise profiles were used to generate pyfactor files that can now be fed to CORA for estimation and smoothing.
