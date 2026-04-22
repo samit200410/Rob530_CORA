@@ -30,7 +30,7 @@ RA-Research Library
 - Options are available for data analysis and plotting
   ![Trajectory Plot](images/odometry_graph)
 
-How to use RA-Research:
+How to author RA-SLAM datasets with RA-Research:
 1. Open world.py
 2. Define world size, landmark locations in make_world()
 3. Define a trajectory in generate_custom_loop()
